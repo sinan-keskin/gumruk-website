@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guarantee Release Services | TOPRAKLAR GÜMRÜK</title>
+  <meta name="description" content="Customs Guarantee Release Services: Rapid dissolution and return of bank letters of guarantee, cash collateral recovery, and customs treasury reconciliation.">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <span class="topbar-item"><i data-lucide="phone"></i> +90 (216) 463 43 51</span>
+        <span class="topbar-item hide-mobile"><i data-lucide="shield-check"></i> <span data-i18n="licensedSpecialists">Licensed Customs Brokers & AEO Specialists</span></span>
+      </div>
+      <div class="topbar-right">
+        <div class="lang-switcher">
+          <button class="lang-btn" id="currentLangBtn">
+            <span class="flag-icon" id="currentLangFlag">🇬🇧</span>
+            <span id="currentLangCode">EN</span>
+            <i data-lucide="chevron-down" style="width: 12px; height: 12px;"></i>
+          </button>
+          <ul class="lang-dropdown" id="langDropdownMenu">
+            <li><a href="#" data-lang="en" class="active"><span class="flag-icon">🇬🇧</span> English</a></li>
+            <li><a href="#" data-lang="tr"><span class="flag-icon">🇹🇷</span> Türkçe</a></li>
+            <li><a href="#" data-lang="de"><span class="flag-icon">🇩🇪</span> Deutsch</a></li>
+            <li><a href="#" data-lang="fr"><span class="flag-icon">🇫🇷</span> Français</a></li>
+            <li><a href="#" data-lang="es"><span class="flag-icon">🇪🇸</span> Español</a></li>
+            <li><a href="#" data-lang="zh"><span class="flag-icon">🇨🇳</span> 中文</a></li>
+            <li><a href="#" data-lang="ar"><span class="flag-icon">🇸🇦</span> العربية</a></li>
+            <li><a href="#" data-lang="ru"><span class="flag-icon">🇷🇺</span> Русский</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo">
+        <div class="logo-symbol"><i data-lucide="anchor" style="width: 24px; height: 24px;"></i></div>
+        <div class="logo-text">
+          <span class="logo-title">TOPRAKLAR <span>GÜMRÜK</span></span>
+          <span class="logo-tagline" data-i18n="tagline">GÜMRÜK MÜŞAVİRLİĞİ & DIŞ TİCARET</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../index.html" class="nav-link" data-i18n="home">Home</a></li>
+          <li class="nav-item"><a href="../about.html" class="nav-link" data-i18n="aboutUs">About Us</a></li>
+          <li class="nav-item nav-item-dropdown">
+            <a href="javascript:void(0)" class="nav-link nav-dropdown-toggle active">
+              <span data-i18n="services">Services</span>
+              <i data-lucide="chevron-down" class="dropdown-arrow" style="width: 14px; height: 14px;"></i>
+            </a>
+            <div class="services-mega-menu">
+              <div class="mega-column">
+                <div class="mega-column-header"><div class="mega-col-icon"><i data-lucide="container"></i></div><span class="mega-col-title" data-i18n="customsRegimes">Customs Regimes</span></div>
+                <ul class="mega-service-list">
+                  <li class="mega-service-item"><a href="import-customs.html"><span class="service-num">01</span><div class="service-meta"><span class="service-name">Import Customs Brokerage</span><span class="service-sub">Clearance & valuation</span></div></a></li>
+                  <li class="mega-service-item"><a href="export-customs.html"><span class="service-num">02</span><div class="service-meta"><span class="service-name">Export Customs Brokerage</span><span class="service-sub">Outward clearance & ATR</span></div></a></li>
+                  <li class="mega-service-item"><a href="inward-processing.html"><span class="service-num">05</span><div class="service-meta"><span class="service-name">Inward Processing (DİİB)</span><span class="service-sub">Duty exemption on inputs</span></div></a></li>
+                  <li class="mega-service-item"><a href="end-use-legislation.html"><span class="service-num">06</span><div class="service-meta"><span class="service-name">End-Use Legislation</span><span class="service-sub">Favorable tariff rates</span></div></a></li>
+                  <li class="mega-service-item"><a href="transit-services.html"><span class="service-num">13</span><div class="service-meta"><span class="service-name">Transit Services</span><span class="service-sub">NCTS & TIR corridors</span></div></a></li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <div class="mega-column-header"><div class="mega-col-icon"><i data-lucide="shield-alert"></i></div><span class="mega-col-title" data-i18n="permitsRegulations">Permits & Regulations</span></div>
+                <ul class="mega-service-list">
+                  <li class="mega-service-item"><a href="food-legislation.html"><span class="service-num">03</span><div class="service-meta"><span class="service-name">Food Legislation Services</span><span class="service-sub">Sanitary tests & codex</span></div></a></li>
+                  <li class="mega-service-item"><a href="trophy-cites.html"><span class="service-num">04</span><div class="service-meta"><span class="service-name">Trophy CITES Permits</span><span class="service-sub">Hunting animal CITES</span></div></a></li>
+                  <li class="mega-service-item"><a href="agriculture-permits.html"><span class="service-num">07</span><div class="service-meta"><span class="service-name">Agriculture Ministry Permits</span><span class="service-sub">Control certificates</span></div></a></li>
+                  <li class="mega-service-item"><a href="tareks-ce-regulations.html"><span class="service-num">08</span><div class="service-meta"><span class="service-name">TAREKS / CE Technical</span><span class="service-sub">Electronic product audit</span></div></a></li>
+                  <li class="mega-service-item"><a href="used-machinery.html"><span class="service-num">09</span><div class="service-meta"><span class="service-name">Used Machinery Clearance</span><span class="service-sub">Permit & age approvals</span></div></a></li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <div class="mega-column-header"><div class="mega-col-icon"><i data-lucide="file-check"></i></div><span class="mega-col-title" data-i18n="legalExpress">Legal & Express</span></div>
+                <ul class="mega-service-list">
+                  <li class="mega-service-item"><a href="guarantee-release.html" style="background: var(--sea-ice);"><span class="service-num">10</span><div class="service-meta"><span class="service-name" style="color: var(--sea-blue);">Guarantee Release</span><span class="service-sub">Active Page</span></div></a></li>
+                  <li class="mega-service-item"><a href="attestation-certification.html"><span class="service-num">11</span><div class="service-meta"><span class="service-name">Consulate Attestation</span><span class="service-sub">Apostille & chamber seals</span></div></a></li>
+                  <li class="mega-service-item"><a href="vedop-tracking.html"><span class="service-num">12</span><div class="service-meta"><span class="service-name">VEDOP Export Tracking</span><span class="service-sub">Tax office audit</span></div></a></li>
+                  <li class="mega-service-item"><a href="transfer-services.html"><span class="service-num">14</span><div class="service-meta"><span class="service-name">Transfer Services</span><span class="service-sub">Port-to-port transfer</span></div></a></li>
+                  <li class="mega-service-item"><a href="courier-services.html"><span class="service-num">15</span><div class="service-meta"><span class="service-name">Courier Services</span><span class="service-sub">Fast-track micro-export</span></div></a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a href="../media.html" class="nav-link" data-i18n="media">Media</a></li>
+          <li class="nav-item"><a href="../links.html" class="nav-link" data-i18n="usefulLinks">Useful Links</a></li>
+          <li class="nav-item"><a href="../contact.html" class="nav-link" data-i18n="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="../contact.html" class="btn btn-primary btn-sm"><span data-i18n="consultBroker">Consult Broker</span></a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-menu-drawer" id="mobileMenuDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo"><span class="logo-title">TOPRAKLAR <span>GÜMRÜK</span></span></div>
+      <button class="mobile-drawer-close" id="mobileDrawerClose">✕</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="../index.html" class="mobile-nav-link" data-i18n="home">Home</a></li>
+      <li><a href="../about.html" class="mobile-nav-link" data-i18n="aboutUs">About Us</a></li>
+      <li><a href="../index.html#servicesGridSection" class="mobile-nav-link" data-i18n="services">Services (15 Departments)</a></li>
+      <li><a href="../media.html" class="mobile-nav-link" data-i18n="media">Media</a></li>
+      <li><a href="../links.html" class="mobile-nav-link" data-i18n="usefulLinks">Useful Links</a></li>
+      <li><a href="../contact.html" class="mobile-nav-link" data-i18n="contact">Contact</a></li>
+    </ul>
+  </aside>
+
+  <!-- Dedicated Service Hero with 3D Canvas Asset -->
+  <section class="service-hero-header">
+    <div class="container service-hero-grid">
+      <div>
+        <div class="breadcrumb-nav">
+          <a href="../index.html" data-i18n="home">Home</a> <span>/</span> <a href="../index.html#servicesGridSection" data-i18n="services">Services</a> <span>/</span> <strong>10. Guarantee Release</strong>
+        </div>
+        <div class="badge badge-gold" style="margin-bottom: 12px;">Customs Financial Recovery • Collateral Dissolution</div>
+        <h1 class="service-page-title">Guarantee Release Services</h1>
+        <p class="service-page-intro">
+          Expediting the dissolution, liquidation, and return of bank letters of guarantee (Teminat Mektupları) and cash deposits locked in Customs Accounting Directorates under temporary import, DİİB, transit, or tax valuation disputes.
+        </p>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="#inquiryForm" class="btn btn-primary"><i data-lucide="send" style="width: 16px; height: 16px;"></i> <span data-i18n="requestClearance">Request Customs Clearance</span></a>
+          <a href="#workflow" class="btn btn-secondary">Recovery Roadmap</a>
+        </div>
+      </div>
+
+      <!-- 3D Interactive Model -->
+      <div class="service-3d-canvas-wrap" data-service-type="guarantee">
+        <div class="canvas-badge-overlay">
+          <i data-lucide="lock" style="width: 14px; height: 14px; color: #D97706;"></i>
+          <span data-i18n="inspect3dTip">Interactive 3D Model • Drag to Inspect</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Main Body & Sidebar -->
+  <section class="service-content-layout">
+    <div class="container service-body-grid">
+      <article class="service-main-article">
+        <div class="content-block">
+          <h2 data-i18n="statutoryScope">Statutory Scope & Legal Architecture</h2>
+          <p>
+            Under Articles 202–215 of the Customs Law No. 4458, importers and transit operators are required to lodge financial securities (bank letters of guarantee, cash collateral, or government bonds) to cover potential customs debt when utilizing conditional regimes (Temporary Admission 5300, Inward Processing 5100, Customs Warehousing 7100, Transit 8000, or End-Use).
+          </p>
+          <p>
+            Once commercial commitments are fulfilled (e.g. re-export completed or DİİB closed), these guarantees frequently remain frozen in Customs Accounting Directorates (Saymanlık Müdürlükleri) for months or years due to bureaucratic reconciliation hurdles. This ties up substantial corporate credit lines with commercial banks and incurs unneeded letter of guarantee commission expenses. Topraklar’s Dedicated Guarantee Release Desk audits the ledger and unlocks your working capital rapidly.
+          </p>
+
+          <h3>Key Operational Competencies:</h3>
+          <ul>
+            <li><strong>Reconciliation with Customs Saymanlık:</strong> Auditing electronic collateral accounts (Teminat Takip Sistemi - TTS) across Istanbul, Mersin, Izmir, and Ankara customs accounting offices.</li>
+            <li><strong>Temporary Admission Re-Export Clearance:</strong> Matching original Regime 5300 import declarations against Regime 3153 exit declarations to prove full departure of temporary equipment.</li>
+            <li><strong>Resolution of Disputed Valuation Deposits:</strong> Reclaiming cash tax deposits placed during Reference Price (Gözetim/Referans Fiyat) disputes following favorable administrative committee or tax court rulings.</li>
+            <li><strong>Bank Letter Physical Retrieval:</strong> Obtaining the official release letter (Teminat Çözüm Yazısı) and physically retrieving original letters of guarantee for return to issuing commercial banks.</li>
+          </ul>
+        </div>
+
+        <div class="content-block" id="workflow">
+          <h2>Step-by-Step Guarantee Liquidation Roadmap</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px;">
+            <div style="background: #F8FAFC; border: 1px solid #E2E8F0; padding: 20px; border-radius: 10px;">
+              <span style="font-weight: 800; color: #0284C7; font-size: 1.1rem;">Phase 1: Collateral Ledger Audit</span>
+              <p style="font-size: 0.88rem; color: #475569; margin-top: 6px;">Extraction of all open bank letters of guarantee, cash deposits, and global bonds registered under the company tax ID.</p>
+            </div>
+            <div style="background: #F8FAFC; border: 1px solid #E2E8F0; padding: 20px; border-radius: 10px;">
+              <span style="font-weight: 800; color: #0284C7; font-size: 1.1rem;">Phase 2: Fulfillment Evidence Matching</span>
+              <p style="font-size: 0.88rem; color: #475569; margin-top: 6px;">Compiling re-export declarations, DİİB official closure decrees, or TSE conformity letters proving discharge of statutory debt.</p>
+            </div>
+            <div style="background: #F8FAFC; border: 1px solid #E2E8F0; padding: 20px; border-radius: 10px;">
+              <span style="font-weight: 800; color: #0284C7; font-size: 1.1rem;">Phase 3: Formal Customs Saymanlık Petition</span>
+              <p style="font-size: 0.88rem; color: #475569; margin-top: 6px;">Lodging the legal petition with the supervising Customs Directorate and Accounting Office. Resolving ledger balance inquiries.</p>
+            </div>
+            <div style="background: #F8FAFC; border: 1px solid #E2E8F0; padding: 20px; border-radius: 10px;">
+              <span style="font-weight: 800; color: #0284C7; font-size: 1.1rem;">Phase 4: Guarantee Release & Credit Restoration</span>
+              <p style="font-size: 0.88rem; color: #475569; margin-top: 6px;">Issuance of Teminat İade Yazısı. Physical letter delivered to your treasury or cash transferred directly back to company bank accounts.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="document-checklist-box">
+          <h3 style="color: #0F172A; font-size: 1.25rem;" data-i18n="requiredChecklist">Required Import Dossier Checklist</h3>
+          <p style="font-size: 0.9rem; color: #64748B;">Documents required to initiate guarantee resolution:</p>
+          <div class="doc-list-grid">
+            <div class="doc-item"><i data-lucide="file-text"></i> Copy of Bank Letter of Guarantee (Teminat Mektubu)</div>
+            <div class="doc-item"><i data-lucide="file-text"></i> Cash Deposit Customs Receipt (Saymanlık Alındısı)</div>
+            <div class="doc-item"><i data-lucide="file-text"></i> Original Import Declaration under which guarantee was placed</div>
+            <div class="doc-item"><i data-lucide="file-text"></i> Corresponding Export Declaration (Proving re-export)</div>
+            <div class="doc-item"><i data-lucide="file-text"></i> DİİB Official Closure Letter (If placed under inward processing)</div>
+            <div class="doc-item"><i data-lucide="file-text"></i> Company Tax Clearance Certificate (Vergi Borcu Yoktur)</div>
+          </div>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 32px; box-shadow: 0 8px 24px rgba(15,23,42,0.05);" id="inquiryForm">
+          <h3 style="margin-bottom: 8px;" data-i18n="getConsultation">Direct Broker Consultation</h3>
+          <p style="font-size: 0.9rem; color: #64748B; margin-bottom: 20px;">Submit details of your frozen customs bank guarantees to recover your corporate credit lines.</p>
+          <form class="customs-inquiry-form">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+              <input type="text" required class="quick-input" placeholder="Company Name *" data-i18n-placeholder="companyName">
+              <input type="text" required class="quick-input" placeholder="Contact Person *" data-i18n-placeholder="fullName">
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+              <input type="email" required class="quick-input" placeholder="Corporate Email *" data-i18n-placeholder="email">
+              <input type="tel" required class="quick-input" placeholder="Phone Number *" data-i18n-placeholder="phone">
+            </div>
+            <div style="margin-bottom: 16px;">
+              <textarea rows="3" class="quick-input" placeholder="Customs Directorate where guarantee is held, guarantee amount, regime (Temporary Import, DİİB, Transit)..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Submit to Guarantee Recovery Specialist <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+            </button>
+          </form>
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="service-sidebar">
+        <div class="sidebar-widget">
+          <h4 class="sidebar-widget-title" data-i18n="all15Departments">All 15 Service Departments</h4>
+          <ul class="sidebar-services-nav">
+            <li><a href="import-customs.html">01. Import Customs Brokerage <span>→</span></a></li>
+            <li><a href="export-customs.html">02. Export Customs Brokerage <span>→</span></a></li>
+            <li><a href="food-legislation.html">03. Food Legislation Services <span>→</span></a></li>
+            <li><a href="trophy-cites.html">04. Trophy CITES Permits <span>→</span></a></li>
+            <li><a href="inward-processing.html">05. Inward Processing (DİİB) <span>→</span></a></li>
+            <li><a href="end-use-legislation.html">06. End-Use Legislation <span>→</span></a></li>
+            <li><a href="agriculture-permits.html">07. Ministry of Agriculture Permits <span>→</span></a></li>
+            <li><a href="tareks-ce-regulations.html">08. TAREKS / CE Technical <span>→</span></a></li>
+            <li><a href="used-machinery.html">09. Used Machinery Clearance <span>→</span></a></li>
+            <li><a href="guarantee-release.html" class="active">10. Guarantee Release <span>→</span></a></li>
+            <li><a href="attestation-certification.html">11. Consulate Attestation <span>→</span></a></li>
+            <li><a href="vedop-tracking.html">12. VEDOP Export Tracking <span>→</span></a></li>
+            <li><a href="transit-services.html">13. Transit Services <span>→</span></a></li>
+            <li><a href="transfer-services.html">14. Transfer Services <span>→</span></a></li>
+            <li><a href="courier-services.html">15. Courier Services <span>→</span></a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-cta-card">
+          <h4>Stop Paying Bank Commissions</h4>
+          <p>Every month an unreleased letter of guarantee sits at customs, your bank charges non-refundable credit commissions.</p>
+          <div style="font-size: 1.3rem; font-weight: 800; color: #38BDF8;">+90 (216) 463 43 51</div>
+          <a href="../contact.html" class="btn btn-white btn-sm" style="margin-top: 8px;">Recovery Desk</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: 0;">
+        <p data-i18n="allRightsReserved">© 2026 Topraklar Gümrük Müşavirliği & Logistics Inc. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="../index.html" data-i18n="home">Home</a>
+          <a href="../about.html" data-i18n="aboutUs">About Us</a>
+          <a href="../media.html" data-i18n="media">Media</a>
+          <a href="../links.html" data-i18n="usefulLinks">Useful Links</a>
+          <a href="../contact.html" data-i18n="contact">Contact</a>
+          <a href="../privacy.html" data-i18n="privacyGdpr">Data Privacy & GDPR</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/i18n.js"></script>
+  <script src="../js/service-3d.js"></script>
+  <script src="../js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

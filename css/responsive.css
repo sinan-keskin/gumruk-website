@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Responsive & Mobile Adaptations
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .services-mega-menu {
+    width: 860px;
+    gap: 16px;
+    padding: 20px;
+  }
+  
+  .workflow-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 992px) {
+  .site-header {
+    height: 74px;
+  }
+
+  .main-nav, .header-actions .btn {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .topbar-item.hide-mobile {
+    display: none;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-interactive-card {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .service-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .service-body-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    display: none; /* Hide topbar on small mobile to maximize viewport */
+  }
+
+  .hero-section {
+    padding: 40px 0 60px 0;
+    min-height: auto;
+  }
+
+  .hero-stats-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .services-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workflow-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doc-list-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .service-3d-canvas-wrap {
+    height: 280px;
+  }
+}
