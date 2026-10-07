@@ -537,28 +537,40 @@ img, svg {
 
 /* Brand Logo Image */
 .brand-logo-img {
-  width: 44px;
-  height: 44px;
+  height: 56px;
+  width: auto;
+  max-width: 64px;
   object-fit: contain;
   display: block;
-  background: linear-gradient(135deg, #0B192C 0%, #172554 100%);
-  padding: 6px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(11, 25, 44, 0.15), inset 0 0 0 1px rgba(251, 188, 29, 0.3);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
   flex-shrink: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
 }
 
 .brand-logo:hover .brand-logo-img {
   transform: scale(1.06);
-  box-shadow: 0 6px 16px rgba(11, 25, 44, 0.25), inset 0 0 0 1px rgba(251, 188, 29, 0.5);
+  filter: brightness(1.08);
 }
 
 .footer-logo-img {
-  width: 42px;
-  height: 42px;
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), inset 0 0 0 1px rgba(251, 188, 29, 0.35);
+  height: 52px;
+  width: auto;
+  max-width: 58px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.mobile-drawer-header .brand-logo-img {
+  height: 44px;
+  width: auto;
+  max-width: 50px;
 }
 
 .brand-logo {
