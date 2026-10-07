@@ -1998,3 +1998,38 @@ img, svg {
     transform: translateY(0);
   }
 }
+
+/* Footer Attribution Credit */
+.footer-credit {
+  margin-top: 8px;
+  font-size: 0.82rem;
+  color: #94A3B8;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.footer-credit a {
+  color: #38BDF8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.footer-credit a:hover {
+  color: #7DD3FC;
+  text-decoration: underline;
+}
+
+.credit-badge {
+  display: inline-block;
+  padding: 1px 8px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 999px;
+  color: #38BDF8;
+  font-size: 0.74rem;
+  font-weight: 500;
+}
+

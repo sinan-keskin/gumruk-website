@@ -229,7 +229,9 @@ const translations = {
     "fastClearanceDesc": "Liman ve havalimanlarında 7/24 operasyonel takip ile en kısa sürede gümrükten çekim güvencesi.",
     "officialPortalsBadge": "Resmi Kurum Portalları",
     "visitPortal": "Resmi Portala Git →",
-    "incotermsTableTitle": "Incoterms 2020 Uluslararası Teslim Şekilleri Rehberi"
+    "incotermsTableTitle": "Incoterms 2020 Uluslararası Teslim Şekilleri Rehberi",
+    "webDesignBy": "Web Tasarım & Hosting:",
+    "since2016": "2016'dan beri"
   },
   "en": {
     "topbarLicensed": "Licensed Customs Brokerage & Foreign Trade Consultancy",
@@ -455,7 +457,9 @@ const translations = {
     "fastClearanceDesc": "24/7 operational follow-up at ports and airports ensuring minimal dwell time and rapid cargo release.",
     "officialPortalsBadge": "Official Regulatory Portals",
     "visitPortal": "Visit Official Portal →",
-    "incotermsTableTitle": "Incoterms 2020 Commercial Trade Terms Reference"
+    "incotermsTableTitle": "Incoterms 2020 Commercial Trade Terms Reference",
+    "webDesignBy": "Web Design & Hosting:",
+    "since2016": "Since 2016"
   },
   "de": {
     "topbarLicensed": "Zugelassene Zollagentur & Außenhandelsberatung",
@@ -681,7 +685,9 @@ const translations = {
     "fastClearanceDesc": "Operative Betreuung rund um die Uhr an Häfen und Flughäfen für eine schnellstmögliche Freigabe.",
     "officialPortalsBadge": "Offizielle Behördenportale",
     "visitPortal": "Zum offiziellen Portal →",
-    "incotermsTableTitle": "Incoterms 2020 Internationale Lieferklauseln"
+    "incotermsTableTitle": "Incoterms 2020 Internationale Lieferklauseln",
+    "webDesignBy": "Webdesign & Hosting:",
+    "since2016": "Seit 2016"
   },
   "fr": {
     "topbarLicensed": "Commissionnaire en Douane Agréé & Conseil en Commerce International",
@@ -907,7 +913,9 @@ const translations = {
     "fastClearanceDesc": "Suivi opérationnel 24h/24 et 7j/7 dans les ports et aéroports garantissant une mainlevée rapide.",
     "officialPortalsBadge": "Portails réglementaires officiels",
     "visitPortal": "Visiter le portail officiel →",
-    "incotermsTableTitle": "Référence des termes commerciaux internationaux Incoterms 2020"
+    "incotermsTableTitle": "Référence des termes commerciaux internationaux Incoterms 2020",
+    "webDesignBy": "Conception Web & Hébergement :",
+    "since2016": "Depuis 2016"
   },
   "es": {
     "topbarLicensed": "Agencia de Aduanas Colegiada y Asesoría de Comercio Exterior",
@@ -1133,7 +1141,9 @@ const translations = {
     "fastClearanceDesc": "Seguimiento operativo 24/7 en puertos y aeropuertos para garantizar el despacho en el menor tiempo.",
     "officialPortalsBadge": "Portales Oficiales Reguladores",
     "visitPortal": "Visitar Portal Oficial →",
-    "incotermsTableTitle": "Referencia de Términos Comerciales Incoterms 2020"
+    "incotermsTableTitle": "Referencia de Términos Comerciales Incoterms 2020",
+    "webDesignBy": "Diseño Web y Hosting:",
+    "since2016": "Desde 2016"
   },
   "zh": {
     "topbarLicensed": "专业持证海关报关行与外贸合规咨询",
@@ -1359,7 +1369,9 @@ const translations = {
     "fastClearanceDesc": "港口及机场现场7/24小时全程跟进，最大限度减少滞港时间，确保存取提货高效顺畅。",
     "officialPortalsBadge": "官方政务与海关平台",
     "visitPortal": "前往官方政务网站 →",
-    "incotermsTableTitle": "国际贸易术语解释通则 Incoterms 2020 快速参考"
+    "incotermsTableTitle": "国际贸易术语解释通则 Incoterms 2020 快速参考",
+    "webDesignBy": "网站设计与主机运维:",
+    "since2016": "自2016年起"
   },
   "ar": {
     "topbarLicensed": "التخليص الجمركي المرخص والاستشارات التجارية الدولية",
@@ -1585,7 +1597,9 @@ const translations = {
     "fastClearanceDesc": "متابعة ميدانية على مدار الساعة في الموانئ والمطارات لضمان استلام البضائع بأسرع وقت.",
     "officialPortalsBadge": "البوابات الحكومية الرسمية",
     "visitPortal": "زيارة البوابة الرسمية →",
-    "incotermsTableTitle": "دليل شروط التجارة الدولية إنكوتيرمز 2020"
+    "incotermsTableTitle": "دليل شروط التجارة الدولية إنكوتيرمز 2020",
+    "webDesignBy": "تصميم الموقع والاستضافة:",
+    "since2016": "منذ 2016"
   },
   "ru": {
     "topbarLicensed": "Лицензированный таможенный брокер и внешнеторговый консалтинг",
@@ -1811,7 +1825,9 @@ const translations = {
     "fastClearanceDesc": "Круглосуточный мониторинг в портах и аэропортах для скорейшего выпуска товаров.",
     "officialPortalsBadge": "Официальные государственные порталы",
     "visitPortal": "Перейти на официальный портал →",
-    "incotermsTableTitle": "Справочник международных торговых терминов Incoterms 2020"
+    "incotermsTableTitle": "Справочник международных торговых терминов Incoterms 2020",
+    "webDesignBy": "Веб-дизайн и хостинг:",
+    "since2016": "С 2016 года"
   }
 };
 
