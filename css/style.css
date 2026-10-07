@@ -330,22 +330,54 @@ img, svg {
 .topbar-socials {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   padding-left: 12px;
-  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .topbar-socials a {
-  color: #94A3B8;
-  display: flex;
+  color: #CBD5E1;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   transition: all var(--transition-fast);
 }
 
 .topbar-socials a:hover {
   color: #FFFFFF;
-  transform: scale(1.1);
+  background: rgba(2, 132, 199, 0.45);
+  border-color: #38BDF8;
+  transform: translateY(-1px);
+}
+
+.topbar-socials a svg {
+  width: 14px;
+  height: 14px;
+}
+
+.footer-social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #94A3B8;
+  transition: all var(--transition-fast);
+}
+
+.footer-social-btn:hover {
+  color: #FFFFFF;
+  background: var(--sea-blue);
+  border-color: var(--sea-light);
+  transform: translateY(-2px);
 }
 
 /* Language Switcher */

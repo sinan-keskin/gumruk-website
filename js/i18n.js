@@ -1373,6 +1373,9 @@ class I18nManager {
     localStorage.setItem('topraklar_lang', lang);
     localStorage.setItem('vanguard_lang', lang);
     this.applyTranslations(lang);
+    if (window.lucide && typeof window.lucide.createIcons === 'function') {
+      window.lucide.createIcons();
+    }
 
     // Update active class on dropdown and any flag selectors
     document.querySelectorAll('[data-lang]').forEach(opt => {
