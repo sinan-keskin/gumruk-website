@@ -23,7 +23,8 @@
       0.1,
       100
     );
-    camera.position.set(0, 3.5, 7.5);
+    camera.position.set(0, 1.2, 5.8);
+    camera.lookAt(0, 0, 0);
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(canvasWrap.clientWidth, canvasWrap.clientHeight);
@@ -32,10 +33,11 @@
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.15;
+    renderer.domElement.classList.add('service-3d-canvas');
     canvasWrap.appendChild(renderer.domElement);
 
     // Lights
-    const ambientLight = new THREE.AmbientLight(0xFFFFFF, 0.9);
+    const ambientLight = new THREE.AmbientLight(0xFFFFFF, 0.95);
     scene.add(ambientLight);
 
     const keyLight = new THREE.DirectionalLight(0xFFFFFF, 1.3);
@@ -47,15 +49,15 @@
     fillLight.position.set(-8, -4, -6);
     scene.add(fillLight);
 
-    // Subtle Ground Shadow Plane
-    const groundGeo = new THREE.CylinderGeometry(4.2, 4.2, 0.15, 32);
+    // Subtle Ground Shadow Plane / Pedestal
+    const groundGeo = new THREE.CylinderGeometry(3.6, 3.6, 0.12, 32);
     const groundMat = new THREE.MeshStandardMaterial({
       color: 0xF1F5F9,
-      roughness: 0.8,
-      metalness: 0.1
+      roughness: 0.85,
+      metalness: 0.05
     });
     const ground = new THREE.Mesh(groundGeo, groundMat);
-    ground.position.y = -1.8;
+    ground.position.y = -1.45;
     ground.receiveShadow = true;
     scene.add(ground);
 
@@ -262,12 +264,13 @@
         const baseGeo = new THREE.BoxGeometry(2.4, 0.8, 2.0);
         const baseMat = new THREE.MeshStandardMaterial({ color: 0xF59E0B, roughness: 0.4 });
         const base = new THREE.Mesh(baseGeo, baseMat);
+        base.position.y = -0.5;
         group.add(base);
 
         const boomGeo = new THREE.CylinderGeometry(0.3, 0.3, 3.2, 16);
         const boomMat = new THREE.MeshStandardMaterial({ color: 0x1E293B, metalness: 0.8 });
         const boom = new THREE.Mesh(boomGeo, boomMat);
-        boom.position.set(0.6, 1.4, 0);
+        boom.position.set(0.6, 0.9, 0);
         boom.rotation.z = -Math.PI / 4;
         group.add(boom);
         break;
