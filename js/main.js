@@ -212,13 +212,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 7. Hero Background Video Autoplay Controller
+  // 7. Hero Background Video Autoplay Controller (Works on GitHub Pages & Static Hosting)
   const heroVideo = document.getElementById('heroBgVideo');
   if (heroVideo) {
-    heroVideo.play().catch(() => {
-      // Browsers require muted playback for autoplay
-      heroVideo.muted = true;
-      heroVideo.play().catch(() => {});
-    });
+    heroVideo.muted = true;
+    heroVideo.defaultMuted = true;
+    heroVideo.setAttribute('playsinline', '');
+    heroVideo.setAttribute('webkit-playsinline', '');
+
+    const tryPlay = () => {
+      const p = heroVideo.play();
+      if (p !== undefined) {
+        p.catch(() => {
+          // If browser policy blocked immediate autoplay, play upon first user interaction
+          const onInteract = () => {
+            heroVideo.play().catch(() => {});
+            ['click', 'touchstart', 'scroll'].forEach(evt => document.removeEventListener(evt, onInteract));
+          };
+          ['click', 'touchstart', 'scroll'].forEach(evt => document.addEventListener(evt, onInteract, { once: true, passive: true }));
+        });
+      }
+    };
+
+    if (heroVideo.readyState >= 2) {
+      tryPlay();
+    } else {
+      heroVideo.addEventListener('loadeddata', tryPlay, { once: true });
+    }
   }
 });
