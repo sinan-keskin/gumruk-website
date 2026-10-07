@@ -1354,17 +1354,17 @@ class I18nManager {
       document.addEventListener('click', () => {
         langDropdown.classList.remove('show');
       });
-
-      const options = langDropdown.querySelectorAll('a[data-lang]');
-      options.forEach(opt => {
-        opt.addEventListener('click', (e) => {
-          e.preventDefault();
-          const targetLang = opt.getAttribute('data-lang');
-          this.setLanguage(targetLang);
-          langDropdown.classList.remove('show');
-        });
-      });
     }
+
+    // Attach to all language switcher triggers across the page
+    document.querySelectorAll('[data-lang]').forEach(opt => {
+      opt.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetLang = opt.getAttribute('data-lang');
+        this.setLanguage(targetLang);
+        if (langDropdown) langDropdown.classList.remove('show');
+      });
+    });
   }
 
   setLanguage(lang) {
@@ -1374,9 +1374,8 @@ class I18nManager {
     localStorage.setItem('vanguard_lang', lang);
     this.applyTranslations(lang);
 
-    // Update active class on dropdown
-    const options = document.querySelectorAll('#langDropdownMenu a[data-lang]');
-    options.forEach(opt => {
+    // Update active class on dropdown and any flag selectors
+    document.querySelectorAll('[data-lang]').forEach(opt => {
       if (opt.getAttribute('data-lang') === lang) {
         opt.classList.add('active');
       } else {
@@ -1384,16 +1383,24 @@ class I18nManager {
       }
     });
 
-    // Update current lang button display
-    const currentCode = document.getElementById('currentLangCode');
+    // Update current lang button display with SVG flag image
+    const isSubDir = window.location.pathname.includes('/services/');
+    const flagPrefix = isSubDir ? '../assets/flags/' : 'assets/flags/';
     const currentFlag = document.getElementById('currentLangFlag');
-    if (currentCode) currentCode.textContent = lang.toUpperCase();
+    if (currentFlag) {
+      if (currentFlag.tagName === 'IMG') {
+        currentFlag.src = flagPrefix + lang + '.svg';
+        currentFlag.alt = lang.toUpperCase();
+      } else {
+        currentFlag.innerHTML = `<img src="${flagPrefix + lang}.svg" alt="${lang.toUpperCase()}" class="flag-img">`;
+      }
+    }
 
-    const flags = {
-      en: "🇬🇧", tr: "🇹🇷", de: "🇩🇪", fr: "🇫🇷",
-      es: "🇪🇸", zh: "🇨🇳", ar: "🇸🇦", ru: "🇷🇺"
-    };
-    if (currentFlag) currentFlag.textContent = flags[lang] || "🌐";
+    const currentCode = document.getElementById('currentLangCode');
+    if (currentCode) {
+      currentCode.textContent = '';
+      currentCode.style.display = 'none';
+    }
 
     // Set html lang and direction for RTL languages like Arabic
     document.documentElement.lang = lang;
